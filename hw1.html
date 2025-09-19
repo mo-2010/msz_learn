@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HW1 - تقرير مبسّط لجمع البيانات (لكشري كيك)</title>
+  <style>
+    :root{--bg:#080808;--card:#0f1112;--text:#eaf7f2;--muted:#9fb3ad;--accent:#1db58a;--glass:rgba(255,255,255,0.02);--border:rgba(255,255,255,0.04)}
+    body{margin:0;font-family:Segoe UI, Tahoma, 'Noto Naskh Arabic', Arial; background:var(--bg); color:var(--text);padding:24px;line-height:1.7}
+    .wrap{max-width:900px;margin:0 auto}
+    header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+    h1{font-size:20px;margin:0}
+    .subtitle{color:var(--muted);font-size:13px}
+    .card{background:var(--card);border:1px solid var(--border);padding:14px;border-radius:10px;margin-bottom:12px}
+    h2{margin:0 0 8px 0;color:var(--accent)}
+    ul{margin:8px 0 12px 20px}
+    li{margin-bottom:6px}
+    .small{color:var(--muted);font-size:13px}
+    .example{background:var(--glass);padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.02);margin-top:8px}
+    table{width:100%;border-collapse:collapse;margin-top:8px}
+    th,td{padding:8px;border:1px solid rgba(255,255,255,0.03);text-align:center}
+    thead th{color:var(--muted)}
+    footer{color:var(--muted);font-size:13px;margin-top:8px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>تقرير مبسّط: جمع البيانات واستخدامها — لكشري كيك</h1>
+        <div class="subtitle">ملف: hw1.html — شرح واضح ومباشر للأول مرة</div>
+      </div>
+      <div class="small">الوقت المقترح: 4 ساعات</div>
+    </header>
+
+    <section class="card">
+      <h2>مقدمة سريعة</h2>
+      <p class="small">لكشري كيك شركة صغيرة لصنع الكعك للمناسبات. صاحبتها تريد استخدام البيانات لتعرف الأنماط واتخاذ قرارات أفضل (مثلاً: متى تزيد الإنتاج؟ أي نوع كعك يحقق أرباح أكثر؟).</p>
+    </section>
+
+    <section class="card">
+      <h2>1. خصائص البيانات وهيكل المعلومات</h2>
+      <p class="small">شرح بسيط للعناصر الأساسية:</p>
+      <ul>
+        <li><strong>البيانات</strong>: أرقام وكلمات خام (مثال: تاريخ الطلب، نوع المناسبة، الكمية، السعر).</li>
+        <li><strong>الخصائص المهمة</strong>: الدقة (صحيحة؟)، الاكتمال (خانات ناقصة؟)، التناسق (نفس تنسيق التاريخ والأسعار).</li>
+        <li><strong>عمليات الإعداد</strong>: جمع → فحص → تنظيف (تصحيح/تعبئة) → تنظيم في جدول → تخزين.</li>
+        <li><strong>المعلومات</strong>: نتائج بعد المعالجة (مثال: "ديسمبر أعلى شهر مبيعات"). هذه المعلومات هي التي تساعد في اتخاذ قرار.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>2. طرق جمع البيانات وقيمتها</h2>
+      <p class="small">هناك طريقتان رئيسيتان:</p>
+      <ul>
+        <li><strong>بيانات أولية</strong> (نجمعها بنفسنا): سجلات المبيعات، استبيان للزبائن. مفيدة والدقّة عالية، لكنها تحتاج وقت.</li>
+        <li><strong>بيانات ثانوية</strong> (من مصادر جاهزة): تقارير، إحصاءات. سريعة وأرخص لكنها قد لا تناسب خصوصية العمل.</li>
+      </ul>
+      <p class="small">لا تنسى: كلما زاد <strong>حجم البيانات</strong> واكتمالها، كلما أصبحت النتائج أوثق. والتناسق مهم جداً (نفس وحدات العملة والتواريخ).</p>
+    </section>
+
+    <section class="card">
+      <h2>3. جودة البيانات وتأثيرها على القرار</h2>
+      <ul>
+        <li><strong>مصدر البيانات:</strong> مصدر رسمي (نظام مبيعات) أوّق من ملاحظات مكتوبة باليد.</li>
+        <li><strong>طرق الجمع:</strong> الاستبيان يعطي رأي العميل، وسجلات المبيعات تعطي أرقامًا فعلية.</li>
+        <li><strong>اكتمال ودقة:</strong> نقص أو خطأ في البيانات يؤدي لقرارات خاطئة (مثل إنتاج زائد).</li>
+        <li><strong>حداثة البيانات:</strong> البيانات القديمة قد لا تعكس السوق اليوم.</li>
+        <li><strong>النتيجة:</strong> بيانات جيدة → قرارات صحيحة؛ بيانات ضعيفة → أخطاء في التخطيط والمال.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>مثال عملي صغير (واضح وبدون تعقيد)</h2>
+      <div class="example">
+        <p class="small">جدول صغير يوضّح مشكلة القيم المفقودة وكيف نحلها بسرعة:</p>
+        <table>
+          <thead>
+            <tr><th>التاريخ</th><th>نوع المناسبة</th><th>الكمية</th><th>سعر الوحدة</th><th>الإجمالي</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>2024-11-05</td><td>عيد ميلاد</td><td>1</td><td>100</td><td>100</td></tr>
+            <tr><td>2024-11-20</td><td>زفاف</td><td>1</td><td>500</td><td>500</td></tr>
+            <tr><td>2024-12-01</td><td>عيد ميلاد</td><td>2</td><td>120</td><td>240</td></tr>
+            <tr><td>2025-01-20</td><td>عيد ميلاد</td><td></td><td>120</td><td></td></tr>
+          </tbody>
+        </table>
+        <p class="small">الحل البسيط: نملأ الكمية بقيمة منطقية (مثل متوسط أو الوسيط) ونحسب الإجمالي = الكمية × سعر الوحدة. بعد ذلك نحسب مجموع الإيرادات والشهر الأعلى.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>خاتمة قصيرة</h2>
+      <p class="small">العملية الأساسية: اجمع بيانات صحيحة، نظّفها، وحولها لمعلومات بسيطة مثل "أي شهر الأعلى طلب" أو "أي نوع مربح أكثر". هذه المعلومات ستساعد ماندي تتخذ قرارات أبسط وأقل مخاطرة.</p>
+    </section>
+
+    <footer>
+      <p class="small">لو بدك أحفظ هالصفحة كـ ملف HTML جاهز لتحميل، أو أحولها لصيغة PDF رسمية — أقدر أسويها بسرعة.</p>
+    </footer>
+  </div>
+</body>
+</html>
